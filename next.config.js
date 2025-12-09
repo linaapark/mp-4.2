@@ -1,7 +1,19 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     images: {
-        domains: ["img.artsearch.io"], // 👈 allow external image host
+        remotePatterns: [
+            {
+                protocol: "https",
+                hostname: "www.artic.edu",
+                pathname: "/iiif/2/**",
+            },
+            {
+                protocol: "https",
+                hostname: "img.artsearch.io",
+                pathname: "/**",
+            },
+        ],
+
     },
 };
 

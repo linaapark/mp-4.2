@@ -6,6 +6,7 @@ export default function Navbar() {
             <Link href="/" className="hover:underline">Home</Link>
             <Link href="/about" className="hover:underline">About</Link>
             <Link href="/random" className="hover:underline">Random Artwork</Link>
+            <li><Link href="/infinite">Infinite Gallery</Link></li>  {/* <-- New link */}
         </nav>
     );
 }
